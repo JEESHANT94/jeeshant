@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADVENTURE</title>
+    <!-- css -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles/style.css">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1 class="logo">ADVENTURE</h1>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#tour">Tours</a></li>
+            <li><a href="#explore">Explore</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a class="ctn" href="#">contact</a></li>
+        </ul>
+        <!-- below both are usefull -->
+        <!-- <img src="/css/img/menu-btn.png" alt="" class="menu-btn"> -->
+        <div class="menu-btn">
+            &#9776
+        </div>
+
+
+    </nav>
+    <header>
+
+        <div class="header-content" id="home">
+            <h2>Explore The Colorful World</h2>
+            <div class="line"></div>
+            <h1>A WONDERFUL GIFT</h1>
+            <a href="#" class="ctn">Learn More</a>
+
+
+        </div>
+    </header>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click', () => {
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+
+    <section class="events" >
+        <div class="title">
+            <h1>Upcoming Events</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col" id="img1">
+                <img src="/css/img/img1.png" alt="">
+                <h4>Manali Camp Trek</h4>
+                <p>This camp is organized jp diamonds and shukla shukla's factory. Thats enough for this event.Fees will
+                    anounce soon so keep in thouch.</p>
+                <a href="#" class="ctn">Learn More</a>
+
+            </div>
+            <div class="col" id="img2">
+                <img src="/css/img/img2.png" alt="">
+                <h4>Moutain walk</h4>
+                <p>This camp is also organized jp diamonds and shukla shukla's factory. Moreover its best way to meet jp
+                    and shukla(parth) bcz they will both join in this camp.However, fees might be higher than expacted.
+                </p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="explore" id="explore">
+        <div class="explore-contact">
+            <h1>EXPLORE THE WORLD</h1>
+            <div class="line"></div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi reiciendis error sint accusantium dolorum
+                voluptatem?</p>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </section>
+    <section class="tours" id="tour">
+        <div class="row">
+            <div class="col content-col">
+                <h1>UPCOMIING TOURS & DESTINATIONS</h1>
+                <div class="line"></div>
+                <P>Our Upcoming tour places will be goa and kashmir. First we will organize kashmir tour as our
+                    community decided.</P>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col img-col">
+                <div class="img-gallery">
+                    <img src="/css/img/img3.0.jpg" alt="">
+                    <img src="/css/img/img5.png" alt="">
+                    <img src="/css/img/img3.png" alt="">
+                    <img src="/css/img/img6.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+  <section class="footer" id="about">
+      <p>160 Nandanvan Township, Sidhpur,Gujrat,INDIA | phone:9898989898 | Email: shuklaparth546@gmail.com</p>
+      <p>Copyright © 2022 Jeeshant Advanture</p>
+  </section>
+</body>
+
+</html>
